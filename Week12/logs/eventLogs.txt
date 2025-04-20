@@ -1,0 +1,90 @@
+29ac6f62-007c-4c89-96bc-f90d0817ea90 	 [2025-04-02 11:03:24] 	 GET request to /
+3dc75cb1-a5eb-47c7-8cd2-ac09872f20d1 	 [2025-04-02 11:03:24] 	 ERROR: Error - Not allowed by CORS
+9f9b772f-d406-450a-958c-f80a6d9990ac 	 [2025-04-02 11:04:31] 	 GET request to /
+23bfbda9-cefc-400e-b3cd-97446f370863 	 [2025-04-02 11:04:31] 	 GET request to /assets/styles.css
+1eb9e398-8cc0-4bd3-8447-ceb4eb64c5bc 	 [2025-04-02 11:04:31] 	 GET request to /assets/logo.png
+618349b2-270c-4c52-bdd8-fda06b69d01d 	 [2025-04-02 11:04:31] 	 GET request to /assets/script.js
+f09dedc7-9ebb-46af-9448-448ce129bca9 	 [2025-04-02 11:06:25] 	 GET request to /assets/styles.css
+16524205-a3d0-425b-bf99-24a298ca0fc7 	 [2025-04-02 11:06:26] 	 GET request to /
+e1af3ae7-ab2f-426e-b522-090bb4299f98 	 [2025-04-02 11:06:26] 	 GET request to /assets/styles.css
+2bb7f5a0-7782-4984-be2d-761267ed67b1 	 [2025-04-02 11:06:26] 	 GET request to /assets/script.js
+4e90ae8e-4cd0-4927-8866-d81b35205d1a 	 [2025-04-02 11:06:26] 	 GET request to /assets/logo.png
+81f8d845-a455-4f82-aeb0-5d2fbee3a6ff 	 [2025-04-02 11:06:28] 	 GET request to /about.html
+b68d32b4-a9e8-487f-a959-84f6ae2c62e5 	 [2025-04-02 11:06:28] 	 GET request to /assets/styles.css
+c4458aa2-e239-4b5a-a4ff-a5bbd0bfd328 	 [2025-04-02 11:06:30] 	 GET request to /
+6149c981-fbd6-493f-9fff-fc308fe5fcc8 	 [2025-04-02 11:06:30] 	 GET request to /assets/styles.css
+4ffe8558-cb25-4b60-8f4d-86a1ce309d4e 	 [2025-04-02 11:06:30] 	 GET request to /assets/logo.png
+c83ae5e4-d11b-4e58-8ab2-5f41f279a679 	 [2025-04-02 11:06:30] 	 GET request to /assets/script.js
+e05fe558-5baa-4208-9eb9-b6439d00b129 	 [2025-04-02 11:06:33] 	 GET request to /about.html
+cd988432-5415-4804-bb35-bde4bf033509 	 [2025-04-02 11:06:33] 	 GET request to /assets/styles.css
+84196a3f-d61c-44a7-a72a-2bdbd4ebb04f 	 [2025-04-02 11:06:36] 	 GET request to /cc.html
+4bb75f7d-4a4d-465c-937e-ffe6e0425335 	 [2025-04-02 11:06:36] 	 GET request to /assets/styles.css
+769b5cce-6026-42a4-9161-f0f13af2a549 	 [2025-04-02 11:06:43] 	 GET request to /assets/styles.css
+9c832ce4-35c8-4058-86d5-6b8bc3f09d06 	 [2025-04-02 11:06:44] 	 GET request to /
+fa32e289-9601-4a11-98d6-1b1966cead0a 	 [2025-04-02 11:06:44] 	 GET request to /assets/styles.css
+081177cd-f98f-4c3e-a5c4-272e639cd58b 	 [2025-04-02 11:06:44] 	 GET request to /assets/logo.png
+2b18f6f2-4c11-4f81-8836-66ede16b6cb3 	 [2025-04-02 11:06:44] 	 GET request to /assets/script.js
+0a3798c1-ab2a-4130-9dba-c71bd11d0e75 	 [2025-04-07 12:38:56] 	 GET request to /
+ab658022-5e8c-4dfe-97c6-28a9c4ff3608 	 [2025-04-07 12:39:58] 	 GET request to /employees
+610786d6-6466-4f77-b91b-f7c5d85f9b14 	 [2025-04-07 12:41:16] 	 POST request to /employees
+5f6b78eb-c70a-40d2-94a8-7c334b29e34a 	 [2025-04-07 12:42:13] 	 PUT request to /employees
+e1953d08-bd83-479d-b48f-e981a908f93a 	 [2025-04-07 12:42:33] 	 DELETE request to /employees
+cac876f7-379c-45c1-b70f-1309622ca376 	 [2025-04-07 12:42:43] 	 GET request to /employees
+a48b939e-ab21-4e64-8794-439072b65790 	 [2025-04-07 12:43:03] 	 GET request to /employees/2
+effc5cce-f799-4ba8-a1e8-4feb7a58106f 	 [2025-04-07 12:43:11] 	 GET request to /employees/2
+105e52a4-00a9-4a93-990a-9c9378d82641 	 [2025-04-07 12:43:11] 	 ERROR: TypeError - Cannot read properties of undefined (reading 'id')
+5a1a4899-94c8-4ad6-8b8b-ffec5855beac 	 [2025-04-07 12:43:21] 	 GET request to /employees/2
+20b68f4f-2061-4178-80de-08c82c09f436 	 [2025-04-07 12:44:03] 	 GET request to /employees/2
+aa73c807-ad9a-4c79-a02d-c8d65328bcbe 	 [2025-04-14 11:06:39] 	 POST request to /employees
+569aa92d-b0f1-48e5-a23a-3839c7e73916 	 [2025-04-14 11:06:52] 	 GET request to /employees/67fd328fb061738df26ffc51
+e1fca342-4f1b-4ae1-a633-cadaa1567d71 	 [2025-04-14 11:07:09] 	 PUT request to /employees/67fd328fb061738df26ffc51
+a6068c3e-3a4d-4a31-8521-d6ea1431e720 	 [2025-04-14 11:07:16] 	 PUT request to /employees
+b97d3eca-94c6-422a-b36b-7a14dc6d8b3c 	 [2025-04-14 11:07:33] 	 POST request to /employees
+7a003e1a-bf53-42af-a057-f4349463ff37 	 [2025-04-14 11:07:50] 	 DELETE request to /employees
+991ce6c8-51b4-4c7f-a830-2bf1eda049b2 	 [2025-04-14 11:27:35] 	 GET request to /
+fc83370e-dcea-4b3a-8ed4-2b57d325dc57 	 [2025-04-19 21:43:31] 	 GET request to /
+aff49dee-8138-4457-aa39-157704005bc6 	 [2025-04-19 21:44:29] 	 GET request to /
+9ddce756-adda-427e-90b7-b8d12c7c104c 	 [2025-04-19 21:46:03] 	 GET request to /employees
+d39c7032-86c9-46e1-93f0-fb5292e6de36 	 [2025-04-19 21:46:11] 	 GET request to /employees
+8aedefae-ffaf-4b0c-beef-add372c5faf7 	 [2025-04-19 21:46:19] 	 POST request to /employees
+bda65fa6-fdd8-4a94-83c2-0db6549abf92 	 [2025-04-19 21:47:20] 	 PUT request to /employees
+6217110a-da11-4f29-bcc2-fbaca25ad369 	 [2025-04-19 21:47:43] 	 POST request to /employees
+f3cd3d62-028d-41ee-85c8-6857611d8a03 	 [2025-04-19 21:47:48] 	 GET request to /employees
+971cb3a1-5189-43e2-bf36-51545793108c 	 [2025-04-19 21:48:18] 	 DELETE request to /employees
+0fa98363-3621-41c8-a2ce-2db5ad1df2b7 	 [2025-04-19 21:48:27] 	 GET request to /employees
+b8c92873-e7a6-4b0a-8c0a-2743704d2714 	 [2025-04-19 22:34:00] 	 GET request to /
+25f05ec3-9b96-4362-8138-bfe4ca7408e0 	 [2025-04-19 22:34:22] 	 GET request to /students
+e5aeee6f-8aea-4aac-9427-7a5b956f494c 	 [2025-04-19 22:34:55] 	 GET request to /students/:id
+0ed92979-a56d-4217-832c-5f387bfdf9b2 	 [2025-04-19 22:35:02] 	 POST request to /students
+913d6b12-ec2d-42dc-a2d1-39e29befb501 	 [2025-04-19 22:35:02] 	 ERROR: TypeError - Cannot destructure property 'firstName' of 'req.body' as it is undefined.
+9373b8e4-e647-4f12-a5b3-d5a3c563c56d 	 [2025-04-19 22:36:39] 	 POST request to /students
+c3970ec0-f0ab-4398-a162-8179cec09a86 	 [2025-04-19 22:37:30] 	 POST request to /students
+9f2c461e-7a94-47ef-9d5f-6bbd3ce1a265 	 [2025-04-19 22:38:05] 	 POST request to /students
+027f421f-a314-4768-be45-0ff9da05fc80 	 [2025-04-19 22:38:46] 	 GET request to /students
+4377bc0b-e72b-4213-af1a-7634c9683104 	 [2025-04-19 22:39:15] 	 ERROR: SyntaxError - Unexpected token ''', "{"id": '68046c1d0"... is not valid JSON
+ac67367a-ca7d-4aaf-a93c-77e52432ade2 	 [2025-04-19 22:39:15] 	 PUT request to /students
+d18adb37-53e2-42a2-a440-58beeaa8f062 	 [2025-04-19 22:39:24] 	 PUT request to /students
+89e287d1-9e78-411c-8213-0d566c254663 	 [2025-04-19 22:39:33] 	 GET request to /students
+14fa7a13-6e41-4e23-827b-ddebfccc6d9a 	 [2025-04-19 22:39:39] 	 PUT request to /students
+415db7d7-2234-45af-b5d4-f106d1be80a2 	 [2025-04-19 22:40:20] 	 PUT request to /students
+96250a4e-e4ad-4fbc-881c-491a60a2f96a 	 [2025-04-19 22:40:59] 	 GET request to /employees
+6abf37ac-35bc-40bf-8b66-e9e219ebe924 	 [2025-04-19 22:41:10] 	 GET request to /students
+ad294cb3-4c1e-411a-9b73-538e37cc8a6b 	 [2025-04-19 22:41:10] 	 ERROR: SyntaxError - Unexpected end of JSON input
+08388b80-a022-4045-a49c-31164321cdb9 	 [2025-04-19 22:41:13] 	 GET request to /students
+82f2c7fd-8dca-4df9-8349-3fc0666fd58e 	 [2025-04-19 22:41:13] 	 ERROR: SyntaxError - Unexpected end of JSON input
+994fa7bf-9deb-4716-8809-f0c0ce383043 	 [2025-04-19 22:41:29] 	 GET request to /students
+837785ee-81fc-4b50-9680-96452b4cf34e 	 [2025-04-19 22:41:48] 	 PUT request to /students
+233df762-3af8-487a-ba6a-7cbd521018ac 	 [2025-04-19 22:43:24] 	 PUT request to /students
+d0a1d2e1-8422-45a9-a3cc-d1a0307dd58f 	 [2025-04-19 22:43:29] 	 GET request to /students
+fcaef9e1-eb27-481e-8089-f25471486298 	 [2025-04-19 22:44:19] 	 PUT request to /students
+5727740b-7e1b-4eef-9201-1967f661805b 	 [2025-04-19 22:44:19] 	 ERROR: TypeError - Cannot destructure property 'id' of 'req.body' as it is undefined.
+2549ea73-dbaa-497c-b246-c32a40963e33 	 [2025-04-19 22:44:54] 	 PUT request to /students
+24252d35-1222-4d1b-8d8f-732bc9a6dc9e 	 [2025-04-19 22:44:58] 	 PUT request to /students
+43fdf9b6-80d5-4107-8f83-6153ad6ef801 	 [2025-04-19 22:45:43] 	 PUT request to /students
+5d2f59ef-d2d9-4dbd-8097-933d44e5a407 	 [2025-04-19 22:45:54] 	 PUT request to /students
+c1d8e55a-93d2-4f25-b158-0726dcdb999c 	 [2025-04-19 22:45:54] 	 ERROR: SyntaxError - Expected double-quoted property name in JSON at position 35 (line 1 column 36)
+be139eaf-d6e5-4de3-b0b7-fb7098c3b7a9 	 [2025-04-19 22:46:03] 	 PUT request to /students
+b0b5d847-9abd-4a02-8071-060f327cef54 	 [2025-04-19 22:46:39] 	 GET request to /students
+4062944b-c763-45ba-b703-552d7dd69db6 	 [2025-04-19 22:48:07] 	 POST request to /students
+cf872c92-9c5c-4fab-a25e-7088fd829558 	 [2025-04-19 22:48:11] 	 GET request to /students
+2cff98e4-17fd-4ecf-a05e-e7fb81ae35f4 	 [2025-04-19 22:48:46] 	 DELETE request to /students
