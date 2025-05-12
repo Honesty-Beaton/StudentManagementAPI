@@ -7,11 +7,87 @@
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
+    <header>
+        <div>
+            <img src="/assets/logo.png" alt="Sample Image" width="100px">
+        </div>
+                <h3><a href="final.html">Final Project - Event Ticketing System</a></h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
     <h1>Welcome to Our Node.js Server</h1>
     <p>This is the homepage served from our Node.js server.</p>
-    <img src="/assets/logo.png" alt="Sample Image">
+    
 
     <a href="/about.html">About Us</a> | <a href="../data/sample.json">View Sample JSON</a>
     <script src="/assets/script.js"></script>
+    <main>
+        <div>
+            <h2>Available Events</h2>
+            <ul id="eventsList"></ul>
+
+            <script>
+            async function loadEvents() 
+            {
+                const response = await fetch("/api/events");
+                const events = await response.json();
+
+                const eventsList = document.getElementById("eventsList");
+
+                if(events.length > 0)
+                {
+                    eventsList.innerHTML = events.map(event => `<li>${event.title} - ${event.date}</li>`).join("");
+                }
+                else
+                {
+                    eventsList.innerHTML = "<p>No events to display.</p>";
+                }
+            }
+
+            loadEvents();
+        </script>
+        </div>
+        <div>
+            <h2>Create Event</h2>
+            <form id="eventForm">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Event Title" id="title" required>
+                
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" required>
+                
+                <label for="venue">Venue</label>
+                <input type="text" name="venue" id="venue" placeholder="Venue" required>
+                
+
+                <button type="submit">Create Event</button>
+            </form>
+
+            <script>
+            document.getElementById("eventForm").addEventListener("submit", async (event) => {
+                event.preventDefault();
+                
+                const formData = new FormData(event.target);
+                const eventDetails = Object.fromEntries(formData);
+
+                const response = await fetch("/api/events", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(eventDetails),
+                });
+
+                const result = await response.json();
+                alert(result.message);
+            });
+            </script>
+
+        </div>
+    </main>
+   
+
+
 </body>
 </html>

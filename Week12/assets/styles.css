@@ -5,6 +5,26 @@ body {
     text-align: center;
     padding: 50px;
 }
+header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1em;
+}
+nav
+{
+    display: flex;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
 
 h1 {
     color: #ff5733;
