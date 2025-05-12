@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const Booking = require('../model/bookings');
 const Event = require('../model/event');
 
@@ -36,39 +37,53 @@ const GetBookingById = async (req, res) => {
   }
 };
 
-
 const BookTicket = async (req, res) => {
     try {
         const { eventId, quantity } = req.body;
 
-        const event = await Event.findById(eventId);
-        if (!event) return res.status(404).json({ message: "Event not found!" });
+        // Ensure `eventId` is properly formatted as an ObjectId
+        if (!mongoose.Types.ObjectId.isValid(eventId)) {
+            return res.status(400).json({ message: "Invalid event ID format." });
+        }
 
-        // Debugging before checking availability
+        // Fetch the event from the database
+        const event = await Event.findById(eventId);
+        if (!event) {
+            return res.status(404).json({ message: "Event not found!" });
+        }
+
+        // Debugging: Check event data before seat validation
         console.log("Event Capacity:", event.seatCapacity);
         console.log("Event Booked Seats:", event.bookedSeats);
         console.log("Requested Quantity:", quantity);
 
+        // Validate seat availability
         if (event.bookedSeats + quantity > event.seatCapacity) {
-            return res.status(400).json({ message: "Not enough seats available" });
+            return res.status(400).json({ message: "Not enough seats available." });
         }
 
+        // Ensure `req.user.id` exists (authenticated user)
+        if (!req.user || !mongoose.Types.ObjectId.isValid(req.user.id)) {
+            return res.status(401).json({ message: "Unauthorized - valid user required." });
+        }
+
+        // Create and save the booking
         const newBooking = new Booking({
-            user: req.user.id, // Ensure user's ID is attached
+            user: req.user.id,
             event: eventId,
             quantity
         });
 
         await newBooking.save();
 
-        // Update bookedSeats in event
+        // Update `bookedSeats` count in the event
         event.bookedSeats += quantity;
         await event.save();
 
-        res.status(201).json({ message: "Booking successful", booking: newBooking });
+        res.status(201).json({ message: "Booking successful!", booking: newBooking });
     } catch (error) {
-        console.error("Server error:", error); // Log full error message
-        res.status(500).json({ message: "Server error", error });
+        console.error("Booking Error:", error); // Improved error logging
+        res.status(500).json({ message: "Internal server error.", error: error.message });
     }
 };
 

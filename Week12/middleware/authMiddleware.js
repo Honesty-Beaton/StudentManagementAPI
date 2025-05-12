@@ -16,17 +16,29 @@ const verifyAdmin = (req, res, next) => {
 
 const verifyUser = (req, res, next) => {
     try {
-        const token = req.headers.authorization?.split(' ')[1];
-        if (!token) return res.status(403).json({ message: 'Access denied' });
+        const token = req.headers.authorization?.split(" ")[1];
 
-        const { role } = jwt.verify(token,"38930289sjkdfjksldf902348i9024");
-        if (role !== 'user') return res.status(403).json({ message: 'Only users can book tickets' });
+        if (!token) {
+            console.log("No token provided.");
+            return res.status(403).json({ message: "Access denied" });
+        }
 
+        const decoded = jwt.verify(token, "38930289sjkdfjksldf902348i9024");
+        console.log("Decoded Token:", decoded); // Debugging: Check user inside token
+
+        if (!decoded.id) {
+            console.log("Access blocked: No user ID found.");
+            return res.status(403).json({ message: "Unauthorized - valid user required." });
+        }
+
+        req.user = decoded; // Attach user details to request
         next();
-    } catch {
-        res.status(403).json({ message: 'Invalid token' });
+    } catch (error) {
+        console.log("Token verification error:", error.message);
+        res.status(403).json({ message: "Invalid token" });
     }
 };
+
 
 const verifyToken = (req, res, next) => {
   try {

@@ -1,16 +1,31 @@
 const Event = require("../model/event");
+const Booking = require("../model/bookings");
 
 // Get all events
 const GetAllEvents = async (req, res) => {
-  try {
-    const events = await Event.find();
-    if (!events || events.length === 0) {
-      return res.status(404).json({ message: "No Events found!" });
+    try {
+        const { category, date } = req.query;
+
+        let filter = {};
+
+        // Apply category filter if provided
+        if (category) {
+            filter.category = category;
+        }
+
+        // Apply date filter if provided (ensures correct date format)
+        if (date) {
+            filter.date = new Date(date);
+        }
+
+        // Fetch events with filters
+        const events = await Event.find(filter);
+
+        res.status(200).json({ message: "Filtered events retrieved successfully!", events });
+    } catch (error) {
+        console.error("Error fetching events:", error);
+        res.status(500).json({ message: "Internal server error.", error: error.message });
     }
-    res.json(events);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
 };
 
 // Get a single event
@@ -81,7 +96,7 @@ const UpdateEvent = async (req, res) => {
     if(venue) event.venue = venue;
     if(date) event.date = date;
     if(time) event.time = time;
-    if(seatCapaity) event.seatCapacity = seatCapacity;
+    if(seatCapacity) event.seatCapacity = seatCapacity;
     if(bookedSeats) event.bookedSeats = bookedSeats;
     if(price) event.price = price;
 
